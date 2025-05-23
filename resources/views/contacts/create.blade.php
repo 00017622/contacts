@@ -6,21 +6,21 @@
         @csrf
         <div class="form-group">
             <label for="contact_name">Contact Name</label>
-            <input name="contact_name" id="contact_name" type="text" value="{{ old('contact_name') }}" class="w-full p-2 border border-gray-300 rounded">
+            <input name="contact_name" id="contact_name" type="text" value="{{ old('contact_name') }}" class="">
             @error('contact_name')
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
         <div class="form-group">
             <label for="email">Contact Email</label>
-            <input name="email" id="email" type="email" value="{{ old('email') }}" class="w-full p-2 border border-gray-300 rounded">
+            <input name="email" id="email" type="email" value="{{ old('email') }}" class="">
             @error('email')
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
         <div class="form-group">
             <label for="phone_number">Contact Phone</label>
-            <input name="phone_number" id="phone_number" type="text" value="{{ old('phone_number') }}" class="w-full p-2 border border-gray-300 rounded">
+            <input name="phone_number" id="phone_number" type="text" value="{{ old('phone_number') }}" class="">
             @error('phone_number')
                 <div class="error">{{ $message }}</div>
             @enderror
